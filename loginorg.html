@@ -1,0 +1,210 @@
+
+<html> 
+ 
+<head><script src="sja.js">
+</script> <style>
+  #body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: rgb(22,37,63);
+
+}
+#box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: black;
+  text-align: center;
+  box-shadow: 0 0 15px dodgerblue,0 0 15px dodgerblue,0 0 10px dodgerblue;
+  margin-top: 30px;
+}
+#box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-bottom: 1px solid cyan;
+  padding-bottom: 4px;
+}
+#box input[type = "text"],#box input[type = "password"]{
+  border:2px solid black;
+ 
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border-bottom: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 250px;
+  outline: none;
+  color: white;
+  transition: 0.5s;
+}
+#box input[type = "text"]:focus,#box input[type = "password"]:focus{
+  width: 300px;
+  border:2px solid #2ecc71;
+  border-radius: 20px;
+}
+.signin{
+  border:1px;
+  background: none;
+
+
+  margin: auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 10px;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.signin:hover{
+  background: #2ecc71;
+  text-decoration: underline;
+  box-shadow: 0 0 30px #2ecc71,0 0 60px #2ecc71,0 0 80px #2ecc71,0 0 120px #2ecc71;
+}
+
+.signin:active{
+  background-color: dodgerblue;
+  box-shadow: 0 0 30px dodgerblue,0 0 60px dodgerblue,0 0 80px dodgerblue,0 0 120px dodgerblue;
+  border: 0;
+}
+.btn{
+    letter-spacing: 2px;
+    font-family: italic;
+    border: 1px solid dodgerblue;
+    padding: 14px 40px;
+  outline: none;
+  color: white;
+    margin: 20px auto;
+    position: relative;
+    display: block;
+    
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 24px;    
+    transition: 0.2s;
+}
+.btn:hover{
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px
+#2196f3;    
+ color: white;
+ text-decoration: underline;
+
+}
+.btn:active{
+  background-color: #2ecc71;
+  box-shadow: 0 0 30px #2ecc71,0 0 60px #2ecc71,0 0 80px #2ecc71,0 0 120px #2ecc71;
+  border: 0;
+}
+
+#tex{
+	font-style: italic;
+	font-family: consolas;
+	display: block;
+}
+.emoji{
+	position: relative;
+}
+.a{
+  display: block;
+  text-decoration: none;
+  color: gray;
+  font-family: consolas;
+  font-size: 30px;
+  line-height: 10px;
+  letter-spacing: 1px;
+  background-color: black;
+  overflow: hidden;
+  padding: 30px 30px 32px 30px;
+}
+.slider{
+   height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+#closebtn{
+
+  margin-top: -50px;
+  font-size: 100px;
+  font-weight: 180;
+  margin-left: 170px;
+    display: block;
+  text-decoration: none;
+  color: gray;
+  font-family: consolas;
+  font-size: 30px;
+  line-height: 10px;
+  letter-spacing: 1px;
+  background-color: black;
+  overflow: hidden;
+  padding: 30px 30px 30px 30px;
+}
+.a:hover{
+  font-size: 35px;
+  color: #f1f1f1;
+  
+}
+#closebtn:hover{
+  border:1px solid #f51616 ;
+  background-color: #f51616;
+  color:#f1f1f1; 
+}
+.openbtn{
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+
+}
+#main{
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.openbtn:hover{
+  text-decoration: underline;
+}
+
+</style></head>
+ 
+<body id="body"> 
+  <div id="slider" class="slider">
+  <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
+  <a href="#" class="a"><img src="about.png" width="30px">About</a>
+  <a href="#" class="a"><img src="service.png" width="30px" style="padding-right: 4px;">Services</a>
+  <a href="#" class="a"><img src="client.png" width="30px" style="padding-right: 4px;">Clients</a>
+  <a href="#" class="a"><img src="contact.png" width="30px" style="padding-right: 4px;">Contact</a>
+  </div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button> 
+  </div>
+ <div id="bl"> <center><img src="logo.png" width="300px"  height="200px" style="margin-top: -90px;"></center>
+  <form id="box" action="main page.html" method="post" onsubmit="return psw()">
+<h1>login</h1>
+<input type="text" placeholder="username" id="tbox" onkeydown="validation()"><span id="tex"> </span>
+ <input type="password" placeholder="password" id="pass"><br><br>
+<input type="submit"  class="signin" value="Sign in"><br><br><font color="white"><center><br>or</center></font>
+<p><font color="white">new user? </p></font><br><br>
+<a href="signup.html" class="btn" >create a new account</a>
+</div>
+
+</form>
+</body> 
+ 
+</html>

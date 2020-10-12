@@ -1,0 +1,544 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>main page</title><script src="mainpage.js"></script>
+	<style>
+		.table
+		{
+			background: rgb(21,36,64);
+			top: 0;
+			position: fixed;
+			left: 0;
+			right: 0;
+		}
+
+		
+		.searchbar{
+			border: 2px solid black;
+			 padding: 10px;
+			 background: white;
+			 text-align: left;
+
+
+		}
+		.text,.text2{
+			color: white;1
+			font-family: verderna;
+			font-style: italic;
+	        padding: 2px;
+			border: 1px solid none;
+			text-align: center;
+			transition: 2s;
+
+		}
+		
+		.text:hover{
+			color: white;
+			font-family: verderna;
+			font-style: italic;
+		padding: 2px;
+			border: 1px solid white;
+			text-align: center;
+			cursor: pointer;
+			text-decoration: underline;
+			
+			
+		}
+		.text2:hover{
+			color: white;
+			font-family: verderna;
+			font-style: italic;
+			padding: 2px;
+			border: 1px solid white;
+			text-align: center;
+			text-decoration: underline;
+			cursor: pointer;
+
+			
+		}
+		.sicon{
+			background: gold;
+	     border: 1px solid gold;
+	     height: 35px;
+	     width: 30px;
+	     border-radius: 4px;
+
+		}
+	.sicon:hover{
+			background: orange;
+	     border: 1px solid white;
+		}
+		.sicon:active{
+			background: dodgerblue;
+	     border: 1px solid white;
+		}
+		.logou{
+			border: 1px solid none;
+		}
+		.logou:hover{
+			border: 1px solid white;
+			cursor: pointer;
+		}
+		
+		.grid1{
+
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+			grid-template-rows: repeat(3,1fr);
+			margin-top: 20%;
+			margin-right: 57%;
+			margin-left: 20px;
+			border:1px solid #fff;
+			background-color: #fff;
+			text-align: center;
+			grid-gap: 20px;
+			padding: 20px;
+			padding-left: -80px;
+			overflow: hidden;
+			width: 200px;
+			height: 300px;
+
+
+
+
+
+		}
+		.gridele0{
+
+			grid-column: 1/3;
+			grid-row: 1;
+			font-family: sans-serif;
+			text-align: center;
+			font-weight: bold;
+			margin-bottom:;
+			padding: 0;
+			width: 100%;
+			height: 50px;
+			padding-left: -30px;
+			font-size: 10px;
+			background-color: black;
+			color: #fff;
+
+
+
+
+
+		}
+		.gridele1{
+			grid-column: 1/2;
+			grid-row: 2;
+			width: 45px;
+			height: 50px;
+		}
+.gridele2{
+			grid-column: 2/3;
+			grid-row: 2;
+			background-color: blue;
+			width: 50px;
+			height: 50px;
+		}
+		.gridele3{
+			grid-column: 1/2;
+			grid-row: 3;
+			background-color: blue;
+			width: 50px;
+			height: 50px;
+		}
+		.gridele4{
+			grid-column: 2/3;
+			grid-row: 3;
+			background-color: blue;
+			width: 50px;
+			height: 50px;
+		}
+	.grid2{
+		display: grid;
+			grid-template-columns: repeat(2,1fr);
+			grid-template-rows: repeat(3,1fr);
+			margin-top: -25%;
+			margin-left: 27%;
+			border:1px solid #fff;
+			background-color: #fff;
+			text-align: center;
+			grid-gap: 20px;
+			padding: 20px;
+			padding-left: -80px;
+			overflow: hidden;
+			width: 200px;
+			height: 305px;
+	}
+	.grid3{
+		display: grid;
+			grid-template-columns: repeat(2,1fr);
+			grid-template-rows: repeat(3,1fr);
+			margin-top: -25%;
+			margin-left: 53%;
+			border:1px solid #fff;
+			background-color: #fff;
+			text-align: center;
+			grid-gap: 20px;
+			padding: 20px;
+			padding-left: -80px;
+			overflow: hidden;
+			width: 200px;
+			height: 305px;
+	}
+.grid4{
+		display: grid;
+			grid-template-columns: repeat(2,1fr);
+			grid-template-rows: repeat(3,1fr);
+			margin-top: -25%;
+			margin-left: 80%;
+			border:1px solid #fff;
+			background-color: #fff;
+			text-align: center;
+			grid-gap: 20px;
+			padding: 20px;
+			padding-left: -80px;
+			overflow: hidden;
+			width: 200px;
+			height: 305px;
+	}
+
+.gt{
+
+	font-size: 20px;
+	font-family: sans-serif;
+	text-align: center;
+	padding-left: 10px;
+	margin-top: -30px;
+	padding: 10px 10px 10px 10px;
+}
+.gridback{
+
+	background-image: url("gback.jpg");
+	overflow: hidden;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1000;
+
+}
+
+.hov{
+
+	transition: 0.3s;
+	cursor: pointer;
+
+}
+
+.hov:hover{
+	width: 100px;
+	height: 100px;
+}
+.nblock{
+
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	margin-top: 50px;
+}
+
+.n1{
+
+	grid-column: 1/2;
+	grid-row:  1;
+
+}
+.n2{
+
+	grid-column: 2/3;
+	grid-row:  1;
+	
+}
+.n3{
+
+	grid-column: 3/4;
+	grid-row:  1;
+	
+}
+.n4{
+
+	grid-column: 4/5;
+	grid-row:  1;
+	
+}
+.n5{
+
+	grid-column: 5/6;
+	grid-row:  1;
+	
+}
+.ni {
+
+	margin-top: 20px;
+	display: block;
+	margin-left: 20px;
+	overflow: hidden;
+
+}
+.price{
+ 
+     color: #FF0101;
+     display: block;
+     margin-left: 30px;
+     cursor: pointer;
+}
+
+.price:hover{
+
+	text-decoration: underline;
+	color: dodgerblue;
+}
+
+.hovtext
+{
+
+	border: none;
+	background-color: #4CAF50;
+	padding: 6px;
+	text-align: center;
+	padding-left: 3px;
+	position: absolute;
+	color: #fff;
+	margin-top: -70px;
+	margin-left: 40px;
+opacity: 0;
+transition: 0.3 ease;
+
+}
+.op{
+	backface-visibility: hidden;
+	transition: 0.9 ease;
+}
+.n1:hover .op{
+	opacity: 0.3;
+	
+}
+
+.n2:hover .op{
+	opacity: 0.3;
+	}
+.n3:hover .op{
+	opacity: 0.3;
+	}
+.n4:hover .op{
+	opacity: 0.3;
+	}
+.n5:hover .op{
+	opacity: 0.3;
+	
+}
+
+
+.n1:hover .hovtext{
+	opacity: 1;
+}
+.n2:hover .hovtext{
+	opacity: 1;
+}.n3:hover .hovtext{
+	opacity: 1;
+}.n4:hover .hovtext{
+	opacity: 1;
+}
+.n5:hover .hovtext{
+	opacity: 1;
+}
+
+.boset{
+
+	color: #fff;
+	margin-left: 80%;
+	margin-top: -10%;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.bosei{
+
+	  border: 3px solid #fff;
+	  padding: 10px;
+	  display: inline-flex;
+	  padding-right: 70px;
+	  padding-left: 70px;
+	  transition: 0.3s;
+	}
+
+
+.boset:hover
+{
+	color: #0d0d0d;
+
+}
+.bosei:hover{
+	background-color: #fff;
+
+
+}
+
+.btmnav{
+
+	width: 100%
+	height: 500px;
+	margin-top: 8%;
+	background-color: rgb(44,51,64);
+	color: #fff;
+	display: grid;
+	grid-template-columns: (3,1fr);
+}
+ul{
+
+	font-size: 15px;
+	font-weight: 1800;
+	transition: .3s ease;
+
+}
+li{
+    line-height: 30px;
+}
+li:hover{
+
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.l1,.l2,.l3{
+
+	padding: 20px;
+}
+
+.l1{
+
+	grid-column: 1/2;
+
+}
+
+.l2{
+
+	grid-column: 2/3;
+
+}
+
+.l3{
+
+	grid-column: 3/4;
+}
+
+
+	</style>
+
+</head>
+<body>
+	<table class="table">
+		<th><img src="logou.png" height="60px" class="logou"></th>
+		<th><select style="border: 2px solid white;padding: 20px;">      <option value="All">All</option>
+  <option value="grocery">grocery</option>
+  <option value="elctronics">elctronics</option>
+  <option value="pantry">pantry</option>
+					 <option value="pay">pay</option>
+  <option value="house holds">house holds</option>
+  <option value="workshop needs">workshop needs</option>
+  <option value="tarvel">tarvel</option></select></th>
+		<th colspan="4"><input type="text" name="" placeholder="search" size="100px" class="searchbar"></th> 
+		<th><input type="image" class="sicon" src="search.png"></th>
+		<th class="text">Accounts&<br>lists</th>
+		<th class="text">returns&<br>orders</th>
+		<th class="text">fast delivery<img src="time.png" height="20px"></th>
+		<th class="text"><img src="cart.png" height="40px">cart</th>
+		
+		<tr>
+			<td colspan="" class="text2">hello select address<img src="navr.png" size="5px" height="30px"></td>
+			<td></td>
+			<td class="text2">Today's deals</td>
+			<td class="text2">Mobiles</td>
+			<td class="text2">Best sellers</td>
+			<td class="text2">Urban pay</td>
+			<td></td>
+			<td class="text2">Gaming <br>laptops</td>
+			<td class="text2">premium zone</td>
+            <td class="text2">Rate urban</td>
+            <td class="text2">Global delivery </td>
+		</tr></table><br>
+
+			<div class="gridback"><div class="grid1">                                            
+				<span class="gridele0"><i class="gt">Mobiles</i></span>
+				<span class="gridele1"> <img src="m1.jpeg" width="90px" height="90px" class="hov"></span>
+				<span class="gridele2"><img src="m2.jpeg" width="90px" height="90px"class="hov"> </span>
+				<span class="gridele3"> <img src="m3.jpeg" width="90px" height="90px" class="hov"></span>
+				<span class="gridele4"> <img src="m4.jpeg" width="90px" height="90px" class="hov"></span>
+			</div>
+			<div class="grid2">
+				<span class="gridele0"><i class="gt">Appliances</i></span>
+				<span class="gridele1"><img src="a1.jpeg" width="90px" height="90px" class="hov"> </span>
+				<span class="gridele2"><img src="a2.jpeg" width="90px" height="90px" class="hov"> </span>
+				<span class="gridele3"><img src="a3.jpeg" width="90px" height="90px" class="hov"> </span>
+				<span class="gridele4"> <img src="a4.jpeg" width="90px" height="90px" class="hov"></span>
+			</div>
+
+			<div class="grid3">
+				<span class="gridele0"><i class="gt">Audio</i></span>
+				<span class="gridele1"><img src="s1.jpeg" width="90px" height="90px" class="hov"> </span>
+				<span class="gridele2"><img src="s2.jpeg" width="90px" height="90px" class="hov"> </span>
+				<span class="gridele3"> <img src="s3.jpeg" width="90px" height="90px" class="hov"></span>
+				<span class="gridele4"> <img src="s4.jpeg" width="90px" height="90px" class="hov"></span>
+			</div>
+
+			<div class="grid4">
+				<span class="gridele0"><i class="gt">Fashion</i></span>
+				<span class="gridele1"> <img src="f1.jpeg" width="90px" height="90px" class="hov"></span>
+				<span class="gridele2"><img src="f2.jpeg" width="90px" height="90px" class="hov"> </span>
+				<span class="gridele3"> <img src="f3.jpeg" width="90px" height="90px" class="hov"></span>
+				<span class="gridele4"><img src="f4.jpeg" width="90px" height="90px" class="hov"> </span>
+			</div></div>
+			<div class="nblock">
+				<div class="n1"><img src="n1.jpeg" class="op"><div class="hovtext">Buy now</div><i class="ni">REDMI note 8 pro</i><i class="price">₹9,999</i></div>
+				<div class="n2"><img src="n2.jpeg" class="op"><div class="hovtext">Buy now</div><i class="ni">REDMI note 9 PRO</i><i class="price">₹11,900</i></div>
+				<div class="n3"><img src="n4.jpeg" height="240px" class="op"><div class="hovtext">Buy now</div><i class="ni" style="margin-top: -20px;">REDMI note 7</i><i class="price">₹8,999</i></div>
+				<div class="n4"><img src="n6.jpeg" class="op"><div class="hovtext">Buy now</div><i class="ni">IPHONE 11 pro</i><i class="price">₹99,990</i></div>
+				<div class="n5"><img src="n7.jpeg" class="op"><div class="hovtext">Buy now</div><i class="ni">GOOGLE PIXEL</i><i class="price">₹25,999</i></div>
+			</div>
+			<div class="bose">
+			<img src="bosewall.jpeg" width="100%" height="90%">
+			<div class="boset"><i class="bosei">Shop</i></div>
+			</div>
+			<div class="btmnav">
+		<div class="l1">		
+            
+         <ul type="none">
+         	<h2>Get to Know </h2>
+         	<li> About us </li>
+         	<li> Careers</li>
+         	<li> Press Releases</li>
+         	<li>Urban cares</li>
+         	<li> Gift a smile</li>
+         	
+
+         </ul>
+     </div>
+     <div class="l2">
+     <ul type="none">
+
+     	<h2>Connect with us</h2> 
+     	<li>Facebook</li>
+     	<li>Twitter</li>
+     	<li>Instagram</li>    	
+     </ul></div>
+     <div class="l3">
+     	<ul type="none">
+     		<h2>Make money with us</h2>
+     		<li>Sell on Urban</li>
+     		<li>Sell under Urban</li>
+     		<li>Become an Affilate</li>
+     		<li>Fulfillment by Urban</li>
+     		<li>Advertise your Products</li>
+     		<li>Urban pay on Merchants</li>
+
+     	</ul>
+     </div>
+
+			</div>
+			<div>
+				<img src="logou.png" width="100%" height="40%">
+			</div>
+</body>
+</html>

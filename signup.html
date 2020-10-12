@@ -1,0 +1,302 @@
+<html>
+    
+    <head>
+        <title>
+            sgin up page
+            
+            
+
+        </title><script>
+        	function valid(){
+
+   		var form=document.getElementById("box");
+   		var text= document.getElementById("text");
+   		var email=document.getElementById("email").value;
+   		var patt= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+   		if(email.match(patt))
+   		{
+   			text.innerHTML="email is valid";
+   			text.style.color="green";
+
+   		}
+   		else{
+   			text.innerHTML="email is invalid";
+   			text.style.color="red";
+   			
+   		}
+        	}
+
+
+
+        	function submit() {
+        var form=document.getElementById("box");
+   		var email=document.getElementById("email").value;
+   		var patt= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+
+   			if(email.match(patt))
+   		{
+   			return true;
+
+   		}
+   		else{
+   			alert("INVALID email id try agian");
+   			return false;
+   		}
+
+        		
+        	}
+
+
+        </script>
+        <style>
+        	.body{
+
+        			background-color: #003366;
+
+        	}
+
+         #box{
+         width: 500px;
+         
+         
+  padding: 40px;
+  position: absolute;
+  top: 55%;
+  left: 70%;
+  transform: translate(-50%,-50%);
+  background :black ;
+  text-align: left;
+  color: white;
+overflow: hidden;
+box-shadow: 2px 0 10px dodgerblue, 0 0 40px dodgerblue;
+        border-radius: 5px;
+
+
+
+
+        }
+         
+         
+        #box h2{
+             font-family: Consolas;
+             line-height: 40px;
+             border-bottom: 1px solid white;
+             letter-spacing: 2px;
+             padding-bottom: 2px;
+             overflow: hidden
+         }
+         
+         #box input[type="text"]
+         {
+             width: 300px;
+             background: none;
+             border: 1px solid;
+             border-color: rgb(99,142,184);
+             padding: 10px;
+             overflow: hidden;
+             color: #fff;
+             font-weight: 30;
+             transition: 0.5s;
+             
+         }
+          
+         
+          #box input[type="text"]:focus
+         {
+             width: 400px;
+             background: dodgerblue;
+             border: 1px solid;
+             padding: 10px;
+             overflow: hidden;
+             font-weight: bold;
+             color: #fff;
+             border-bottom: 1px solid orange;
+            
+             
+         }
+         
+         .head{
+             font-family: Verdana;
+             font-weight: 30;
+             border-bottom: 1px solid cyan;
+             display: block;
+             padding: 10px;
+             margin: auto;
+             text-align: center;
+             font-style: italic;
+             letter-spacing: 2px;
+             text-shadow: 1px 2px 2px dodgerblue,1px 2px 2px dodgerblue,1px 2px 2px dodgerblue;
+         }
+         #box input[type="submit"]
+         {
+             width: 150px;
+             background: none;
+             border: 1px solid;
+             border-color: dodgerblue;
+             padding: 10px;
+             overflow: hidden;
+             color: white;
+             text-align: center;
+             letter-spacing: 1px;
+             font-size: 20px;
+             font-family: Consolas;
+             border-radius: 20px;
+             transition: 0.5s;
+             
+         }
+           #box input[type="submit"]:hover
+         {
+             width: 150px;
+             background: dodgerblue;
+             border: 1px solid;
+             border-color: dodgerblue;
+             padding: 10px;
+             overflow: hidden;
+             color: white;
+             text-align: center;
+             letter-spacing: 1px;
+             font-size: 20px;
+             font-family: Consolas;
+             border-radius: 20px;
+             box-shadow: 0 0 20px dodgerblue, 0 0 80px dodgerblue, 0 0 120px dodgerblue;
+             text-decoration: underline;
+             cursor: pointer;
+    
+             
+         }
+         .opt{
+
+                border: 0px solid dodgerblue;
+                height: 10px;
+                border-radius: 0px;
+
+                padding: 10px;
+
+                background-color: black;
+
+                  color: white;
+
+         }
+         .reg{
+                font-weight: 300;
+                color: rgb(61,61,52);
+                font-size: 100px;                
+              top: 70%;
+              margin-top: 20px;
+              margin-left: 10px;
+              animation-name: rsli;
+              animation-duration: 1s;
+              animation-iteration-count: 1;
+              animation-delay: 1s; 
+         }
+
+         @keyframes rsli{
+
+         	0%{  margin-left: -550px;  color: white; }
+         	 	 	80%{  margin-left: 100px;  color: white;  }
+         	 	 	 	100%{  margin-left: 10px; color: white; }
+         	 	 	 	 	
+
+
+
+         }
+
+         .reg{
+         	font-weight: 1#fff00;
+                color: white;
+                font-size: 100px;                
+              top: 70%;
+              margin-top: 20px;
+              margin-left: 10px;
+
+         }
+
+         .imgs{
+
+         	height:400px;
+
+         	width: 600px;
+         	margin-top: -300px;
+
+         	animation-name: imgslide;
+         	animation-iteration-count: 1;
+         	animation-delay: 1s;
+         	animation-duration: 7s;
+
+
+         }
+
+
+        @keyframes imgslide
+         {
+         		10%{
+         				margin-top: -10px;
+         				
+
+
+         		}
+
+         		
+					
+
+         		
+         		    100%{
+         				margin-top: -300px;
+         			}
+         				
+
+
+         		
+
+
+
+
+         }
+         #text{
+         	display: block;
+         	font-size: 20px;
+         	font-style: italic;
+         	letter-spacing: 1px;
+         	transition: 0.2s;
+         	padding: 5px 5px 5px 5px;
+
+         }
+
+         
+         </style>
+        
+    </head>
+    
+    
+<body class="body">
+ <div class="rsli"> <h1 class="reg"> Register to<br> join with us..</h1> </div>
+ <div><img src="ll.jpeg" class="imgs"></div>
+<form id="box" action="loginorg.html" method="post" onsubmit="return submit()">
+  <h1 class="head">Sign up for urban </h1>
+    <h2>first name*</h2>
+    <input type="text" placeholder="first name" required="required">
+
+    
+    <h2>second name</h2>
+    <input type="text" placeholder="second name" required="r">
+    <h2>mobile number*</h2>
+   <select class="opt"><option value="+01" class="opt">+01</option>
+  <option value="+91" class="opt">+91</option>
+  <option value="+62" class="opt">+62</option>
+  <option value="+09" class="opt">+09</option></select></div><input type="text" placeholder="mobile number"><br>
+  <br><br>
+  <h2>gender</h2>
+  <input type="radio" id="male" name="gender" value="male" required="">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+  <h2>email address*</h2>
+  <input type="text" placeholder="@email" id="email" onkeydown="valid()" required="e"><br><span id="text"></span>
+  <br><br><br><center><input type="submit" value="Register"></center>  
+</form>
+</body>
+</html>s

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><script>function validation(){
+
+var form= document.getElementById("form");
+var text= document.getElementById("tex");
+var use= document.getElementById("username").value;
+var c= 'chandrakiran';
+
+if(use==c)
+{
+	text.innerHTML="username is valid";
+	text.style.color="green";
+}
+else{
+		text.innerHTML="username is invalid";
+	text.style.color="red";
+}
+
+
+
+}</script><style>
+	
+#username{
+
+	padding: 15px;
+	outline: o;
+	border-color: cyan;
+	width: 300px;
+}
+
+#tex{
+
+    display: block;
+    font-style: italic;
+    font-family: consolas;
+    letter-spacing: 1px;
+    line-height: 50px;
+
+
+}
+</style>
+	<title></title>
+</head>
+<body><from id="form">
+<h2 id="text">username validation</h2>
+	<input type="text" placeholder="username" onkeydown="validation()" id="username"><br>
+	<span id="tex"></span>
+</body>
+</html></from>
